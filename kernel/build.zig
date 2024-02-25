@@ -27,6 +27,7 @@ pub fn build(b: *std.build.Builder) !void {
         .target = target,
         .optimize = optimize,
     });
+    //kernel.linkLibC();
     kernel.code_model = .kernel;
     kernel.addModule("limine", limine.module("limine"));
     kernel.setLinkerScriptPath(.{ .path = "linker.ld" });
