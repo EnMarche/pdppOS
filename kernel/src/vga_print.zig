@@ -1,3 +1,7 @@
+//
+// Made with <3 by Olaru Paul-Stelian
+//
+
 const font = @import("bootfon.zig").uni_font;
 const limine = @import("limine");
 const std = @import("std");
